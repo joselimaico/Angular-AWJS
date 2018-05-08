@@ -8,10 +8,11 @@ import { Component } from '@angular/core';
 export class AppComponent {
  nombre = 'Jose';
  apellido = 'Limaico';
- edad = 28;
+ edad = 22;
  sueldo = -100000000000000;
- fechaNacimiento = new Date('1996-03-30');
+ fechaNacimiento = new Date('1996-03-31');
  nombreBoton = 'Cambiar color';
+ cambiarBoton = 'cambiar titulo';
  nombreClase = 'sa-titulo';
 
  cambiarClaseDeTitulo(){
@@ -23,4 +24,7 @@ export class AppComponent {
      this.nombreClase = 'sa-titulo'
    }
  }
+  aplicarClase(textoInput: string){
+   this.nombreClase = textoInput;
+  }
 }
