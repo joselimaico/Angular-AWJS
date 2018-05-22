@@ -1,0 +1,38 @@
+.sa-fondo-pelicula-estreno{
+  background-color: #000;
+  border-style: solid;
+  border-color: #000;
+  border-width: 10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: 100%;
+
+  max-width: 100%;
+  height: auto;
+}
+.sa-color-letras-pelicula-estreno{
+  color: #999999;
+  font-size: medium;
+}
+
+.sa-fondo-estado{
+  max-width: 60px;
+  text-align: center;
+}
+.sa-color-estado-amarillo{
+  background-color: #f9ba00;
+
+}
+
+.sa-color-estado-rosado{
+  background-color: #e3003e;
+}
+
+.sa-espaciado {
+  height: 100px;
+}
+
+.sa-fondo{
+  background-color: black;
+}

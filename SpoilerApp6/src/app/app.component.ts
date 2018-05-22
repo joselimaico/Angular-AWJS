@@ -16,13 +16,13 @@ arregloPeliculas = [
     nombre:'Tomb Rider',
     descripcion: 'Alicia Vikander, Walton Goggins',
     esEstreno:false,
-    urlImagen:'https://media.senscritique.com/media/000017667902/960/Tomb_Raider.jpg'
+    urlImagen:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL_FOh_xn19xgXf_Uq5OK3WWzAmoVoZLHCO2vjFd4LKaxijU59eg'
   },
   {
     nombre:'Ready Player One',
     descripcion: 'Tye Sheridan, Olivia algo',
     esEstreno:false,
-    urlImagen:'https://wallpapersite.com/images/pages/pic_h/12867.jpg'
+    urlImagen:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFQprASMSiRnRHYgQl5sHoGr8GiMI9IB2XVIQP_tmD61KFgUY'
   }
 ];
 
@@ -33,20 +33,23 @@ arregloPeliculasEstreno = [
     urlImagen:'https://moemisto.ua/uploads/media/photo_miniature/0002/58/thumb_157198_photo_miniature_huge.jpeg?1518730307'
   },
   {
-    nombre:'Black Panter',
+    nombre:'Maze Runner',
     esEstreno:true,
-    urlImagen:'https://moemisto.ua/uploads/media/photo_miniature/0002/58/thumb_157198_photo_miniature_huge.jpeg?1518730307'
+    urlImagen:'https://1.bp.blogspot.com/-kqkMulUPZ7U/Wm_pJ_oIppI/AAAAAAAABX8/4ieKeITF4Tw5xn8KICi1c4qChjPgyjocACLcBGAs/s1600/bvbyidkMaBls1LTaIWYY6UmYTaL.jpg'
   },
   {
-    nombre:'Black Panter',
+    nombre:'The last Jedi',
     esEstreno:true,
-    urlImagen:'https://moemisto.ua/uploads/media/photo_miniature/0002/58/thumb_157198_photo_miniature_huge.jpeg?1518730307'
+    urlImagen:'http://anders.tjulin.se/wp-content/uploads/2017/12/Star-Wars-The-Last-Jedi.jpg'
   },
   {
-    nombre:'Black Panter',
+    nombre:'Justice League',
     esEstreno:true,
-    urlImagen:'https://moemisto.ua/uploads/media/photo_miniature/0002/58/thumb_157198_photo_miniature_huge.jpeg?1518730307'
+    urlImagen:'https://4.bp.blogspot.com/-K4lXik0ASKQ/Wi17Kjm09KI/AAAAAAAAPUM/oXHLO1vgzNkAgcM64HGJ6xJkyf7gkd9UgCLcBGAs/s320/Liga%2B%25281%2529.jpg'
   }
+];
+arregloBuscador = [
+  'home','peliculas','descargas'
 ];
 
 alertar(evento){

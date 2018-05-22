@@ -1,0 +1,16 @@
+<div class="sa-fondo-pelicula-estreno
+sa-color-letras-pelicula-estreno img-fluid "
+     [style.background-image]="'url('+urlImagen+')'"
+>
+  <!--<img [src]="urlImagen" class="img-fluid" alt="proximamente imagen">-->
+  <div class="sa-espaciado"></div>
+  <p
+    (click)="hizoClickEnEstado()"
+    [class]="'sa-fondo-estado '+claseEstreno">{{textoEstreno}}</p>
+  <p>{{nombrePelicula}}</p>
+  <p >
+    {{descripcionPelicula}}
+  </p>
+
+</div>
+

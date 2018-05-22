@@ -6,13 +6,17 @@ import {FormsModule} from "@angular/forms";
 import { PeliculaBannerComponent } from './peliculas/pelicula-banner/pelicula-banner.component';
 import { BotonComponent } from './boton/boton.component';
 import { GrillaComponent } from './grilla/grilla.component';
+import { PeliculaEstrenoComponent } from './peliculas/pelicula-estreno/pelicula-estreno.component';
+import { BuscadorPeliculaComponent } from './buscador/buscador-pelicula/buscador-pelicula.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PeliculaBannerComponent,
     BotonComponent,
-    GrillaComponent
+    GrillaComponent,
+    PeliculaEstrenoComponent,
+    BuscadorPeliculaComponent
   ],
   imports: [
     BrowserModule,
