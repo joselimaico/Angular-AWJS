@@ -8,55 +8,119 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
 
-mostrarHola = true;
-arregloNumeros = [1,2,3,4,5,6];
+// mostrarHola = true;
+// arregloNumeros = [1,2,3,4,5,6];
 
-arregloPeliculas = [
-  {
-    nombre:'Tomb Rider',
-    descripcion: 'Alicia Vikander, Walton Goggins',
-    esEstreno:false,
-    urlImagen:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL_FOh_xn19xgXf_Uq5OK3WWzAmoVoZLHCO2vjFd4LKaxijU59eg'
-  },
-  {
-    nombre:'Ready Player One',
-    descripcion: 'Tye Sheridan, Olivia algo',
-    esEstreno:false,
-    urlImagen:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFQprASMSiRnRHYgQl5sHoGr8GiMI9IB2XVIQP_tmD61KFgUY'
+// arregloPeliculas = [
+//   {
+//     nombre:'Tomb Rider',
+//     descripcion: 'Alicia Vikander, Walton Goggins',
+//     esEstreno:false,
+//     urlImagen:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL_FOh_xn19xgXf_Uq5OK3WWzAmoVoZLHCO2vjFd4LKaxijU59eg'
+//   },
+//   {
+//     nombre:'Ready Player One',
+//     descripcion: 'Tye Sheridan, Olivia algo',
+//     esEstreno:false,
+//     urlImagen:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFQprASMSiRnRHYgQl5sHoGr8GiMI9IB2XVIQP_tmD61KFgUY'
+//   }
+// ];
+
+// arregloPeliculasEstreno = [
+//   {
+//     nombre:'Black Panter',
+//     esEstreno:true,
+//     urlImagen:'https://moemisto.ua/uploads/media/photo_miniature/0002/58/thumb_157198_photo_miniature_huge.jpeg?1518730307'
+//   },
+//   {
+//     nombre:'Maze Runner',
+//     esEstreno:true,
+//     urlImagen:'https://1.bp.blogspot.com/-kqkMulUPZ7U/Wm_pJ_oIppI/AAAAAAAABX8/4ieKeITF4Tw5xn8KICi1c4qChjPgyjocACLcBGAs/s1600/bvbyidkMaBls1LTaIWYY6UmYTaL.jpg'
+//   },
+//   {
+//     nombre:'The last Jedi',
+//     esEstreno:true,
+//     urlImagen:'http://anders.tjulin.se/wp-content/uploads/2017/12/Star-Wars-The-Last-Jedi.jpg'
+//   },
+//   {
+//     nombre:'Justice League',
+//     esEstreno:true,
+//     urlImagen:'https://4.bp.blogspot.com/-K4lXik0ASKQ/Wi17Kjm09KI/AAAAAAAAPUM/oXHLO1vgzNkAgcM64HGJ6xJkyf7gkd9UgCLcBGAs/s320/Liga%2B%25281%2529.jpg'
+//   }
+// ];
+// arregloBuscador = [
+//   'home','peliculas','descargas'
+// ];
+// peliculasAgregadas =[
+//   {
+//     nombre:'13 Reasons Why',
+//     descripcion: 'Descripcion pelicula',
+//     urlImagen:'http://image.tmdb.org/t/p/w154/s1a1IgRoFkkwT1rSYv91LTtBoHv.jpg'
+//   },
+//   {
+//     nombre:'13 Reasons Why',
+//     descripcion: 'Descripcion pelicula',
+//     urlImagen:'http://image.tmdb.org/t/p/w154/s1a1IgRoFkkwT1rSYv91LTtBoHv.jpg'
+//   },
+//   {
+//     nombre:'13 Reasons Why',
+//     descripcion: 'Descripcion pelicula',
+//     urlImagen:'http://image.tmdb.org/t/p/w154/s1a1IgRoFkkwT1rSYv91LTtBoHv.jpg'
+//   },{
+//     nombre:'13 Reasons Why',
+//     descripcion: 'Descripcion pelicula',
+//     urlImagen:'http://image.tmdb.org/t/p/w154/s1a1IgRoFkkwT1rSYv91LTtBoHv.jpg'
+//   }
+// ];
+//
+//   seriesAgregadas =[
+//     {
+//       nombre:'13 Reasons Why',
+//       descripcion: 'Descripcion pelicula',
+//       urlImagen:'http://image.tmdb.org/t/p/w154/s1a1IgRoFkkwT1rSYv91LTtBoHv.jpg'
+//     },
+//     {
+//       nombre:'13 Reasons Why',
+//       descripcion: 'Descripcion pelicula',
+//       urlImagen:'http://image.tmdb.org/t/p/w154/s1a1IgRoFkkwT1rSYv91LTtBoHv.jpg'
+//     },
+//     {
+//       nombre:'13 Reasons Why',
+//       descripcion: 'Descripcion pelicula',
+//       urlImagen:'http://image.tmdb.org/t/p/w154/s1a1IgRoFkkwT1rSYv91LTtBoHv.jpg'
+//     },{
+//       nombre:'13 Reasons Why',
+//       descripcion: 'Descripcion pelicula',
+//       urlImagen:'http://image.tmdb.org/t/p/w154/s1a1IgRoFkkwT1rSYv91LTtBoHv.jpg'
+//     }
+//   ];
+
+// alertar(evento){
+//   console.log('Evento: ', evento) //true
+//   alert('dio click en es estreno !!');
+// }
+  data: any;
+
+  constructor() {
+    this.data = {
+      labels: ['A','B','C'],
+      datasets: [
+        {
+          data: [300, 50, 100],
+          backgroundColor: [
+            "#FF6384",
+            "#36A2EB",
+            "#FFCE56"
+          ],
+          hoverBackgroundColor: [
+            "#FF6384",
+            "#36A2EB",
+            "#FFCE56"
+          ]
+        }]
+
+    };
   }
-];
-
-arregloPeliculasEstreno = [
-  {
-    nombre:'Black Panter',
-    esEstreno:true,
-    urlImagen:'https://moemisto.ua/uploads/media/photo_miniature/0002/58/thumb_157198_photo_miniature_huge.jpeg?1518730307'
-  },
-  {
-    nombre:'Maze Runner',
-    esEstreno:true,
-    urlImagen:'https://1.bp.blogspot.com/-kqkMulUPZ7U/Wm_pJ_oIppI/AAAAAAAABX8/4ieKeITF4Tw5xn8KICi1c4qChjPgyjocACLcBGAs/s1600/bvbyidkMaBls1LTaIWYY6UmYTaL.jpg'
-  },
-  {
-    nombre:'The last Jedi',
-    esEstreno:true,
-    urlImagen:'http://anders.tjulin.se/wp-content/uploads/2017/12/Star-Wars-The-Last-Jedi.jpg'
-  },
-  {
-    nombre:'Justice League',
-    esEstreno:true,
-    urlImagen:'https://4.bp.blogspot.com/-K4lXik0ASKQ/Wi17Kjm09KI/AAAAAAAAPUM/oXHLO1vgzNkAgcM64HGJ6xJkyf7gkd9UgCLcBGAs/s320/Liga%2B%25281%2529.jpg'
-  }
-];
-arregloBuscador = [
-  'home','peliculas','descargas'
-];
-
-alertar(evento){
-  console.log('Evento: ', evento) //true
-  alert('dio click en es estreno !!');
-}
-
 
 
 
@@ -93,4 +157,7 @@ alertar(evento){
  //  aplicarClase(textoInput: string){
  //   this.nombreClase = textoInput;
  //  }
+
 }
+
+
