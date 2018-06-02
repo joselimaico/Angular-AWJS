@@ -8,12 +8,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { SistemaOperativoComponent } from './sistema-operativo/sistema-operativo.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+import {MatInputModule} from '@angular/material/input';
+import { DetalleComponent } from './detalle/detalle.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CarruselComponent,
-    SistemaOperativoComponent
+    SistemaOperativoComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
@@ -22,6 +26,7 @@ import {MatButtonModule, MatCheckboxModule} from '@angular/material';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

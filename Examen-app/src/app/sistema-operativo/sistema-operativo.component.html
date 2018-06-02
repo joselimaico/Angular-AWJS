@@ -1,3 +1,48 @@
-<p>
-  sistema-operativo works!
-</p>
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Sistema Operativo " disabled value="Cabecera">
+  </mat-form-field>
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Nombre">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Versión API">
+    </mat-form-field></td>
+  </tr></table>
+
+  <!--<p>-->
+    <!--<mat-form-field class="example-full-width">-->
+      <!--<textarea matInput placeholder="Address">1600 Amphitheatre Pkwy</textarea>-->
+    <!--</mat-form-field>-->
+    <!--<mat-form-field class="example-full-width">-->
+      <!--<textarea matInput placeholder="Address 2"></textarea>-->
+    <!--</mat-form-field>-->
+  <!--</p>-->
+
+  <table class="example-full-width" cellspacing="0"><tr>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Fecha de Lanzamiento">
+    </mat-form-field></td>
+    <td><mat-form-field class="example-full-width">
+      <input matInput placeholder="Peso (GB)">
+    </mat-form-field></td>
+    <td>
+      <mat-checkbox>Instalado</mat-checkbox>
+    </td>
+    <!--<td><mat-form-field class="example-full-width">-->
+      <!--<input matInput #postalCode maxlength="5" placeholder="Instalado" >-->
+      <!--<mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>-->
+    <!--</mat-form-field></td>-->
+  </tr></table>
+  <div class="so-boton-limpiar">
+    <button mat-raised-button color ="primary">Limpiar</button>
+  </div>
+  <div class="">
+    <button mat-raised-button color="accent">Crear</button>
+
+  </div>
+
+
+</form>
