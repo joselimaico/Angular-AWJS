@@ -6,6 +6,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SistemaOperativoComponent } from './sistema-operativo/sistema-operativo.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,9 @@ import { SistemaOperativoComponent } from './sistema-operativo/sistema-operativo
     BrowserModule,
     NgbModule.forRoot(),
     HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
