@@ -10,6 +10,11 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule, MatCheckboxModule} from '@angular/material';
 import {MatInputModule} from '@angular/material/input';
 import { DetalleComponent } from './detalle/detalle.component';
+import {InputTextModule} from 'primeng/inputtext';
+import {ButtonModule} from 'primeng/button';
+import { CardComponent } from './card/card.component';
+import {CardModule} from 'primeng/card';
+import { TablaComponent } from './tabla/tabla.component';
 
 
 @NgModule({
@@ -17,7 +22,9 @@ import { DetalleComponent } from './detalle/detalle.component';
     AppComponent,
     CarruselComponent,
     SistemaOperativoComponent,
-    DetalleComponent
+    DetalleComponent,
+    CardComponent,
+    TablaComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +33,10 @@ import { DetalleComponent } from './detalle/detalle.component';
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
-    MatInputModule
+    MatInputModule,
+    InputTextModule,
+    ButtonModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
