@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-sistema-operativo',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sistema-operativo.component.css']
 })
 export class SistemaOperativoComponent implements OnInit {
+
+
 
   constructor() { }
 

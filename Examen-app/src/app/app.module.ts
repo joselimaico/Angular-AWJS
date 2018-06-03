@@ -15,6 +15,7 @@ import {ButtonModule} from 'primeng/button';
 import { CardComponent } from './card/card.component';
 import {CardModule} from 'primeng/card';
 import { TablaComponent } from './tabla/tabla.component';
+import { ItemComponent } from './item/item.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { TablaComponent } from './tabla/tabla.component';
     SistemaOperativoComponent,
     DetalleComponent,
     CardComponent,
-    TablaComponent
+    TablaComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
