@@ -24,7 +24,7 @@ export class SistemaOperativoComponent implements OnInit {
   crear(){
     console.log(`${this.nombre}`);
     console.log(`${this.instalado}`)
-    this.arreglo.push(new SistemaOperativo(this.nombre))
+    this.arreglo.push(new SistemaOperativo(this.nombre,this.instalado))
 
 
   }
@@ -38,7 +38,7 @@ export class SistemaOperativoComponent implements OnInit {
 }
 
 class SistemaOperativo {
-   constructor( public nombreSO:string){
+   constructor( public nombreSO:string,public Instalado:boolean){
 
   }
 
