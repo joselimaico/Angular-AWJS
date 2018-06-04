@@ -16,6 +16,7 @@ import { CardComponent } from './card/card.component';
 import {CardModule} from 'primeng/card';
 import { TablaComponent } from './tabla/tabla.component';
 import { ItemComponent } from './item/item.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { ItemComponent } from './item/item.component';
     MatInputModule,
     InputTextModule,
     ButtonModule,
-    CardModule
+    CardModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

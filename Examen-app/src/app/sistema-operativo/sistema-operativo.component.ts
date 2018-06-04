@@ -9,9 +9,37 @@ export class SistemaOperativoComponent implements OnInit {
 
 
 
+  @Input() arreglo:[any];
+  nombre:string;
+  version_lanzamiento:number;
+  fecha:string;
+  peso:number;
+  instalado:boolean;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  crear(){
+    console.log(`${this.nombre}`);
+    console.log(`${this.instalado}`)
+    this.arreglo.push(new SistemaOperativo(this.nombre))
+
+
+  }
+
+  limpiar(){
+    this.nombre='';
+    this.instalado=false;
+  }
+
+
+}
+
+class SistemaOperativo {
+   constructor( public nombreSO:string){
+
   }
 
 }

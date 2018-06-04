@@ -5,39 +5,34 @@
 
   <table class="example-full-width" cellspacing="0"><tr>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Nombre">
+      <input matInput  [(ngModel)]="nombre" name="nombre" placeholder="Nombre"  >
+
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Versión API">
+      <input matInput [(ngModel)]="version_lanzamiento" name="version" placeholder="Versión API" >
     </mat-form-field></td>
   </tr></table>
-
-  <!--<p>-->
-    <!--<mat-form-field class="example-full-width">-->
-      <!--<textarea matInput placeholder="Address">1600 Amphitheatre Pkwy</textarea>-->
-    <!--</mat-form-field>-->
-    <!--<mat-form-field class="example-full-width">-->
-      <!--<textarea matInput placeholder="Address 2"></textarea>-->
-    <!--</mat-form-field>-->
-  <!--</p>-->
 
   <table class="example-full-width" cellspacing="0"><tr>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Fecha de Lanzamiento">
+      <input matInput [(ngModel)]="fecha" name="fecha" placeholder="Fecha de Lanzamiento" >
     </mat-form-field></td>
     <td><mat-form-field class="example-full-width">
-      <input matInput placeholder="Peso (GB)">
+      <input matInput [(ngModel)]="peso" name="peso" placeholder="Peso (GB)" >
     </mat-form-field></td>
     <td>
-      <mat-checkbox>Instalado</mat-checkbox>
+      <mat-checkbox [(ngModel)]="instalado" name="instalado">Instalado</mat-checkbox>
     </td>
 
   </tr></table>
-  <div class="so-boton-limpiar">
-    <button mat-raised-button color ="primary">Limpiar</button>
-  </div>
-  <div class="">
-    <button mat-raised-button color="accent">Crear</button>
-  </div>
 
 </form>
+
+<div class="so-boton-limpiar">
+  <button mat-button color ="primary" (click)="limpiar()">Limpiar</button>
+</div>
+
+<div class="">
+  <button mat-button color="accent" (click)="crear()" >Crear</button>
+
+</div>
