@@ -26,7 +26,7 @@ export class CorouseldemoComponent implements OnInit {
       {nombre: 'Mongi', anios: 1, especie: 'Magnolia', color: 'Blanco'},
       {nombre: 'Piny', anios: 1, especie: 'Pino', color: 'Verde'},
       {nombre: 'Luz', anios: 2, especie: 'Amapola', color: 'Morado'},
-      
+
     ];
 
 

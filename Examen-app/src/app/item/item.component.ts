@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-item',
@@ -7,15 +7,18 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class ItemComponent implements OnInit {
 
-  @Input() NombreSO: string;
-  @Input() VersionApi: number;
-  @Input() FechaLanzamiento: string;
-  @Input() PesoGigas: number;
-  @Input() EstadoInstalacion: boolean;
+  @Input() nombreSO: string;
+  @Input() versionApiSO: number;
+  @Input() fechaLanzamientoSO: string;
+  @Input() pesoGigasSO: number;
+  @Input() estadoInstalacionSO: boolean;
+
 
   constructor() { }
 
   ngOnInit() {
   }
+
+
 
 }

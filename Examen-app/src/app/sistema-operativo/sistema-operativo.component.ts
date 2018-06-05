@@ -22,15 +22,17 @@ export class SistemaOperativoComponent implements OnInit {
   }
 
   crear(){
-    console.log(`${this.nombre}`);
-    console.log(`${this.instalado}`)
-    this.arreglo.push(new SistemaOperativo(this.nombre,this.instalado))
 
+    this.arreglo.push(new SistemaOperativo(this.nombre,this.version_lanzamiento,this.fecha,this.peso,this.instalado))
+    console.log(this.arreglo)
 
   }
 
   limpiar(){
     this.nombre='';
+    this.version_lanzamiento=0;
+    this.peso=0;
+    this.fecha='';
     this.instalado=false;
   }
 
@@ -38,8 +40,17 @@ export class SistemaOperativoComponent implements OnInit {
 }
 
 class SistemaOperativo {
-   constructor( public nombreSO:string,public Instalado:boolean){
+   constructor( public nombreSO:string,
+                public versionApiSO:number,
+                public fechaLanzamientoSO:string,
+                public pesoGigasSO:number,
+                public instalado:boolean,
+
+
+                ){
 
   }
+
+
 
 }

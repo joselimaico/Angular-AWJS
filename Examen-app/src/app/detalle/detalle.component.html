@@ -6,7 +6,7 @@
   <div class="ui-g-12 ui-md-4">
     <div class="ui-inputgroup">
      <span class="ui-float-label">
-       <input id="peso-input" type="text" size="30" pInputText>
+       <input id="peso-input" type="text" size="30" pInputText [(ngModel)]="peso">
        <label for="peso-input">Peso (GB)</label>
      </span>
     </div>
@@ -62,7 +62,7 @@
   </div>
 
   <div class="ui-g-12 ui-md-4">
-    <button pButton type="button" label="Crear" class="ui-button-success"></button>
+    <button pButton type="button" label="Crear" class="ui-button-success" (click)="crearDetalle()"></button>
   </div>
 
 
