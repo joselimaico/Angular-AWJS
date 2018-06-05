@@ -1,3 +1,23 @@
-<p>
-  tabla works!
-</p>
+
+<p-table [value]="aplicaciones" >
+  <ng-template pTemplate="header">
+    <tr>
+      <th>Nombre App</th>
+      <th>Versión</th>
+      <th>Peso (GB)</th>
+      <th>Fecha de Lanzamiento</th>
+      <th>Costo</th>
+      <th>URL de descarga</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-aplicacion>
+    <tr >
+      <td>{{aplicacion.nombreApp}}</td>
+      <td>{{aplicacion.versionApp}}</td>
+      <td>{{aplicacion.pesoGigasApp}}</td>
+      <td>{{aplicacion.fechaLanzamientoApp}}</td>
+      <td>{{aplicacion.costoApp}}</td>
+      <td>{{aplicacion.urlDescargaApp}}</td>
+    </tr>
+  </ng-template>
+</p-table>

@@ -3,7 +3,9 @@
 
   <div class="row">
     <div class="col-sm-6">
-      <app-carrusel></app-carrusel>
+      <app-carrusel
+      [arregloSO]="arregloSistemasOperativos"
+      ></app-carrusel>
     </div>
     <div class="col-sm-6">
       <app-sistema-operativo [arreglo]="arregloSistemasOperativos" ></app-sistema-operativo>
@@ -28,19 +30,27 @@
 
   <div class="row">
     <div class="col-sm-6" >
-      <app-detalle></app-detalle>
+      <app-detalle [arregloApp]="arregloSistemasOperativos[sistemaID].detalles">
+        <!--[arregloApp]="arregloSistemasOperativos[sistemaID].detalles">-->
+        <!--[Aplicacion]="sistemaID+1"-->
+
+
+      </app-detalle>
     </div>
     <div class="col-sm-6" >
       <app-card
         [sistemaOperativo]="arregloSistemasOperativos[sistemaID]"
 
       >
-
-
       </app-card>
     </div>
     <div class="col-sm-12">
-      <app-tabla></app-tabla>
+      <app-tabla
+        [aplicaciones]="arregloSistemasOperativos[sistemaID].detalles"
+
+      >
+
+      </app-tabla>
     </div>
   </div>
 

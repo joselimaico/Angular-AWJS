@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {map} from 'rxjs/operators';
 
@@ -9,6 +9,7 @@ import {map} from 'rxjs/operators';
 })
 export class CarruselComponent implements OnInit {
   images: Array<string>;
+  @Input() arregloSO;
 
   constructor(private _http: HttpClient) {}
 

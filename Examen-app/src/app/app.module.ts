@@ -17,6 +17,8 @@ import {CardModule} from 'primeng/card';
 import { TablaComponent } from './tabla/tabla.component';
 import { ItemComponent } from './item/item.component';
 import { FormsModule } from '@angular/forms';
+import {TableModule} from 'primeng/table';
+
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { FormsModule } from '@angular/forms';
     InputTextModule,
     ButtonModule,
     CardModule,
-    FormsModule
+    FormsModule,
+    TableModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

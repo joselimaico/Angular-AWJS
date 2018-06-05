@@ -7,17 +7,37 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class DetalleComponent implements OnInit {
 
-@Input() peso:number;
-@Input() version:number;
-@Input() nombre: string;
-@Input() url: string;
-@Input() costo: number;
+  @Input() arregloApp:[any];
+  fecha:string;
+   peso:number;
+   version:number;
+   nombre: string;
+   url: string;
+   costo: number;
   constructor() { }
 
   ngOnInit() {
   }
   crearDetalle(){
-    console.log(`${this.peso}`);
+    this.arregloApp.push(new Aplicacion(this.peso,this.version,this.nombre,this.url,this.fecha,this.costo))
   }
+
+}
+
+class Aplicacion {
+  constructor( public pesoGigasApp:number,
+               public versionApp:number,
+               public nombreApp:string,
+               public urlDescargaApp:string,
+               public fechaLanzamientoApp:string,
+               public costoApp:number,
+
+
+
+  ){
+
+  }
+
+
 
 }

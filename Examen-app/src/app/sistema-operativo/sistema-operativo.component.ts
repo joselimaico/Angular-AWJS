@@ -7,47 +7,45 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class SistemaOperativoComponent implements OnInit {
 
-
-
   @Input() arreglo:[any];
-  nombre:string;
-  version_lanzamiento:number;
-  fecha:string;
-  peso:number;
+  nombreSO:string;
+  versionApiSO:number;
+  fechaLanzamientoSO:string;
+  pesoGigasSO:number;
   instalado:boolean;
+  detalles:[any]
 
-  constructor() { }
+
+  constructor() {
+    this.instalado=false;
+  }
 
   ngOnInit() {
   }
-
   crear(){
 
-    this.arreglo.push(new SistemaOperativo(this.nombre,this.version_lanzamiento,this.fecha,this.peso,this.instalado))
+    this.arreglo.push(new SistemaOperativo(this.nombreSO,this.versionApiSO,this.fechaLanzamientoSO,this.pesoGigasSO,this.instalado,this.detalles))
     console.log(this.arreglo)
 
   }
 
-  limpiar(){
-    this.nombre='';
-    this.version_lanzamiento=0;
-    this.peso=0;
-    this.fecha='';
-    this.instalado=false;
-  }
+
+
+
 
 
 }
 
 class SistemaOperativo {
-   constructor( public nombreSO:string,
-                public versionApiSO:number,
-                public fechaLanzamientoSO:string,
-                public pesoGigasSO:number,
-                public instalado:boolean,
+  constructor( public nombreSO:string,
+               public versionApiSO:number,
+               public fechaLanzamientoSO:string,
+               public pesoGigasSO:number,
+               public instalado:boolean,
+               public detalles:[any]
 
 
-                ){
+  ){
 
   }
 
