@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ab04571-6df4-4947-8870-29162d1adae0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/SpoilerApp6/src/assets/imagenes/Amapola.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpoilerApp6/src/assets/imagenes/Pino.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpoilerApp6/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpoilerApp6/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpoilerApp6/src/app/corouseldemo/corouseldemo.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/SpoilerApp6/src/app/corouseldemo/corouseldemo.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpoilerApp6/src/app/corouseldemo/corouseldemo.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/SpoilerApp6/src/app/corouseldemo/corouseldemo.component.ts" afterDir="false" />
-    </list>
+    <list default="true" id="0ab04571-6df4-4947-8870-29162d1adae0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -249,15 +242,15 @@
       <workItem from="1527949233649" duration="3929000" />
       <workItem from="1527984359365" duration="10488000" />
       <workItem from="1528139627110" duration="11058000" />
-      <workItem from="1528159326566" duration="3689000" />
+      <workItem from="1528159326566" duration="4285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96574000" />
+    <option name="totallyTimeSpent" value="97170000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TypeScript" order="11" />
